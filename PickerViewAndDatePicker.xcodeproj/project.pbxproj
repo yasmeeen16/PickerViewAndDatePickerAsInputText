@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D97690BE83844E1C6D2EFD7 /* Pods_PickerViewAndDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0A1A086DE6569B1411EAD4 /* Pods_PickerViewAndDatePicker.framework */; };
+		5D22E31E233B9204009C2594 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22E31D233B9203009C2594 /* API.swift */; };
 		5D45D1EF233B8513002DE04F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45D1EE233B8513002DE04F /* AppDelegate.swift */; };
 		5D45D1F1233B8513002DE04F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45D1F0233B8513002DE04F /* ViewController.swift */; };
 		5D45D1F4233B8513002DE04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D45D1F2233B8513002DE04F /* Main.storyboard */; };
 		5D45D1F6233B8513002DE04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D45D1F5233B8513002DE04F /* Assets.xcassets */; };
 		5D45D1F9233B8513002DE04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D45D1F7233B8513002DE04F /* LaunchScreen.storyboard */; };
+		5D95712D233BB00B0096996B /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95712C233BB00B0096996B /* MyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0A1A086DE6569B1411EAD4 /* Pods_PickerViewAndDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickerViewAndDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF44CB681018E689110404B /* Pods-PickerViewAndDatePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewAndDatePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewAndDatePicker/Pods-PickerViewAndDatePicker.release.xcconfig"; sourceTree = "<group>"; };
+		5D22E31D233B9203009C2594 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5D45D1EB233B8513002DE04F /* PickerViewAndDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerViewAndDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D45D1EE233B8513002DE04F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D45D1F0233B8513002DE04F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		5D45D1F5233B8513002DE04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D45D1F8233B8513002DE04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D45D1FA233B8513002DE04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D95712C233BB00B0096996B /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		943C60BACE89B03CABA9B49B /* Pods-PickerViewAndDatePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewAndDatePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewAndDatePicker/Pods-PickerViewAndDatePicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D97690BE83844E1C6D2EFD7 /* Pods_PickerViewAndDatePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		449000D88C5AC04601E6954A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A0A1A086DE6569B1411EAD4 /* Pods_PickerViewAndDatePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D22E31C233B91E4009C2594 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D22E31D233B9203009C2594 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		5D45D1E2233B8513002DE04F = {
 			isa = PBXGroup;
 			children = (
 				5D45D1ED233B8513002DE04F /* PickerViewAndDatePicker */,
 				5D45D1EC233B8513002DE04F /* Products */,
+				6F2B175E4E15838C4D888F52 /* Pods */,
+				449000D88C5AC04601E6954A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,49 @@
 		5D45D1ED233B8513002DE04F /* PickerViewAndDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				5D22E31C233B91E4009C2594 /* API */,
+				5D45D203233B868F002DE04F /* Controller */,
+				5D45D202233B8686002DE04F /* View */,
+				5D45D200233B865C002DE04F /* Model */,
 				5D45D1EE233B8513002DE04F /* AppDelegate.swift */,
-				5D45D1F0233B8513002DE04F /* ViewController.swift */,
-				5D45D1F2233B8513002DE04F /* Main.storyboard */,
 				5D45D1F5233B8513002DE04F /* Assets.xcassets */,
-				5D45D1F7233B8513002DE04F /* LaunchScreen.storyboard */,
 				5D45D1FA233B8513002DE04F /* Info.plist */,
 			);
 			path = PickerViewAndDatePicker;
+			sourceTree = "<group>";
+		};
+		5D45D200233B865C002DE04F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D95712C233BB00B0096996B /* MyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D45D202233B8686002DE04F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D45D1F2233B8513002DE04F /* Main.storyboard */,
+				5D45D1F7233B8513002DE04F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D45D203233B868F002DE04F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D45D1F0233B8513002DE04F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F2B175E4E15838C4D888F52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				943C60BACE89B03CABA9B49B /* Pods-PickerViewAndDatePicker.debug.xcconfig */,
+				5CF44CB681018E689110404B /* Pods-PickerViewAndDatePicker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D45D1FD233B8513002DE04F /* Build configuration list for PBXNativeTarget "PickerViewAndDatePicker" */;
 			buildPhases = (
+				996989A243BF929C60FED70B /* [CP] Check Pods Manifest.lock */,
 				5D45D1E7233B8513002DE04F /* Sources */,
 				5D45D1E8233B8513002DE04F /* Frameworks */,
 				5D45D1E9233B8513002DE04F /* Resources */,
+				5C6522B4A24C7A799677305F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,13 +195,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C6522B4A24C7A799677305F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PickerViewAndDatePicker/Pods-PickerViewAndDatePicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickerViewAndDatePicker/Pods-PickerViewAndDatePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996989A243BF929C60FED70B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickerViewAndDatePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D45D1E7233B8513002DE04F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D45D1F1233B8513002DE04F /* ViewController.swift in Sources */,
+				5D22E31E233B9204009C2594 /* API.swift in Sources */,
 				5D45D1EF233B8513002DE04F /* AppDelegate.swift in Sources */,
+				5D95712D233BB00B0096996B /* MyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +379,7 @@
 		};
 		5D45D1FE233B8513002DE04F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943C60BACE89B03CABA9B49B /* Pods-PickerViewAndDatePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +394,7 @@
 		};
 		5D45D1FF233B8513002DE04F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF44CB681018E689110404B /* Pods-PickerViewAndDatePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
